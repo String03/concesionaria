@@ -96,15 +96,21 @@ ImprimirIgual(){
     return console.log("=============================");
 }
 
+HacerTodo(vehiculos){
+    this.ImprimirVehiculos(vehiculos);
+    this.ImprimirIgual();
+    this.ImprimirVehiculoMasCaro(vehiculos);
+    this.ImprimirVehiculoMasBarato(vehiculos);
+    this.ImprimirVehiculoY(vehiculos);
+    this.ImprimirIgual();
+    this.ImprimirVehiculosOrdenados(vehiculos);
+}
+
 }
 
 let vehiculoService = new VehiculoService()
 
-vehiculoService.ImprimirVehiculos(vehiculos);
-vehiculoService.ImprimirIgual();
-vehiculoService.ImprimirVehiculoMasCaro(vehiculos);
-vehiculoService.ImprimirVehiculoMasBarato(vehiculos);
-vehiculoService.ImprimirVehiculoY(vehiculos);
-vehiculoService.ImprimirIgual();
-vehiculoService.ImprimirVehiculosOrdenados(vehiculos);
+vehiculoService.HacerTodo(vehiculos);
+
+
 
